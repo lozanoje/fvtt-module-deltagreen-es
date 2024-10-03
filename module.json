@@ -2,65 +2,105 @@
   "id": "fvtt-module-deltagreen-es",
   "title": "Translation: Spanish [Delta Green: The Role-Playing Game]",
   "description": "Traducción del sistema Delta Green: The Role-Playing Game (github.com/TheLastScrub/delta-green-foundry-vtt-system-unofficial) al español -  Delta Green: The Role-Playing Game spanish translation",
-  "version": "1.42.1",
+  "version": "1.47.1",
   "compatibility": {
     "minimum": "11",
-    "verified": "11.315"
+    "verified": "12.331",
+    "maximum": "12"
   },
-  "languages": [
-    {
+  "languages": [{
       "lang": "es",
       "name": "Español",
       "path": "lang/es.json",
       "flags": {}
     }
   ],
-	  "packFolders": [
-  {
-    "name": "Compendios en español",
-    "sorting": "a",
-    "color": "#b95050",
-    "packs": ["deltagreen-armor-es"]
-  }
+  "packFolders": [{
+      "name": "Delta Green | español",
+      "sorting": "a",
+      "color": "#b95050",
+      "packs": ["armor-es","firearms-es","hand-to-hand-weapons-es","agent-pregens-es","operation-code-name-generator-tables-es","operation-code-name-generator-macro-es"]
+    }
   ],
-  "packs": [
-    {
-      "name": "deltagreen-armor-es",
-      "label": "Armaduras",
+  "packs": [{
+      "name": "firearms-es",
+      "label": "Armas de fuego",
       "system": "deltagreen",
-      "path": "packs/deltagreen-armor-es.db",
+      "path": "packs/firearms-es",
       "type": "Item",
       "private": false,
       "flags": {},
-      "package": "fvtt-module-deltagreen-es",
-      "absPath": "packs/deltagreen-armor-es.db"
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "armor-es",
+      "label": "Armaduras",
+      "system": "deltagreen",
+      "path": "packs/armor-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "hand-to-hand-weapons-es",
+      "label": "Armas cuerpo a cuerpo",
+      "system": "deltagreen",
+      "path": "packs/hand-to-hand-weapons-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "agent-pregens-es",
+      "label": "Agentes pregenerados",
+      "system": "deltagreen",
+      "path": "packs/pregens-es",
+      "type": "Actor",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "operation-code-name-generator-tables-es",
+      "label": "Tablas generación nombres de operaciones",
+      "system": "deltagreen",
+      "path": "packs/operation-code-name-generator-es",
+      "type": "RollTable",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "operation-code-name-generator-macro-es",
+      "label": "Macro de generación de nombres de operaciones",
+      "system": "deltagreen",
+      "path": "packs/operation-code-name-generator-macro-es",
+      "type": "Macro",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
     }
   ],
   "url": "https://github.com/lozanoje/fvtt-module-deltagreen-es",
   "manifest": "https://raw.githubusercontent.com/lozanoje/fvtt-module-deltagreen-es/main/module.json",
   "download": "https://github.com/lozanoje/fvtt-module-deltagreen-es/archive/main.zip",
-  "authors": [
-    {
+  "authors": [{
       "name": "Viriato139ac",
       "discord": "@Viriato139ac#0342"
     }
   ],
-	  "relationships": {
-	    "systems": [{
-	        "id": "deltagreen",
-	        "type": "system",
-	        "compatibility": "1.4.2"
-	      }
-	    ],
-	    "requires": [{
-	        "id": "foundryvtt-es",
-	        "type": "module",
-	        "compatibility": {}
-	      }
-	    ]
-	  },
-	
-	
+  "relationships": {
+    "systems": [{
+        "id": "deltagreen",
+        "type": "system",
+        "compatibility": "1.4.7"
+      }
+    ],
+    "requires": [{
+        "id": "foundryvtt-es",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+
   "esmodules": [
     "fvtt-module-deltagreen-es.js"
   ]

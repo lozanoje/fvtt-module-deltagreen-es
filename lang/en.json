@@ -5,6 +5,7 @@
   "DG.Luck": "Luck",
 
   "DG.FallbackText.ProfessionAndOrRank": "PROFESSION (RANK IF APPLICABLE)",
+  "DG.FallbackText.newItem": "New {type}",
 
   "DG.Skills.accounting": "Accounting",
   "DG.Skills.alertness": "Alertness",
@@ -43,6 +44,7 @@
   "DG.Skills.swim": "Swim",
   "DG.Skills.unarmed_combat": "Unarmed Combat",
   "DG.Skills.unnatural": "Unnatural",
+  "DG.Skills.flight": "Flight",
 
   "DG.Skills.AddTypedOrCustomSkill": "Add Typed/Custom Skill",
   "DG.Skills.AddSkill": "Add Skill",
@@ -111,6 +113,8 @@
 
   "DG.Physical.Wounds": "Wounds",
   "DG.Physical.FirstAidLabel": "First Aid Has Already Been Attempted: ",
+  "DG.Physical.Exhausted": "Exhausted:",
+  "DG.Physical.ExhaustionPenalty": "Penalty:",
 
   "DG.Generic.AddButtonLabel": "Add",
 
@@ -149,13 +153,6 @@
   "DG.Bonds.Score": "Score",
   "DG.Bonds.NewBond": "New Bond",
 
-  "DG.ItemTypes.weapon": "Weapon",
-  "DG.ItemTypes.armor": "Armor",
-  "DG.ItemTypes.motivation": "Motivation",
-  "DG.ItemTypes.bond": "Bond",
-  "DG.ItemTypes.gear": "Gear",
-  "DG.ItemTypes.NewPrefix": "New ",
-
   "DG.Tooltip.HP": "Hit points, a character becomes unconsious at 2 HP, and dies at 0 HP.",
   "DG.Tooltip.MaximumHP": "Maximum health is the average of STR + CON, rounded UP.",
   "DG.Tooltip.WP": "Willpower Points are mental fuel. Agents require Willpower Points to keep going despite exhaustion or mentally taxing situations.  See page 47 of the Agent's Handbook for more detail.",
@@ -173,6 +170,7 @@
   "DG.Tooltip.AdaptedToViolence": "Being adapted to violence means your Agent’s empathy suffers as they come to view violence as nothing but another tool to be wielded. Agent permanently loses 1D6 CHA and the same amount from each of their Bonds.",
   "DG.Tooltip.AdaptedToHelplessness": "Being adapted to helplessness means your Agent’s personal drive suffers as they pull back from the world around them. As soon as your Agent becomes adapted to helplessness, agent permanently loses 1D6 POW.",
   "DG.Tooltip.ToggleEquippedState": "Click to toggle whether this item is equipped or not.",
+  "DG.Tooltip.Exhaustion": "An Agent who works too long or faces extreme danger and injury without resting becomes exhausted. When this comes into play is up to the Handler, but a good rule of thumb is that going a night without sleep or refusing to rest after losing SAN or Hit Points leads to exhaustion.",
 
   "DG.Gear.Expense.NA": "N/A or None",
   "DG.Gear.Expense.Incidental": "Incidental",
@@ -224,7 +222,7 @@
   "DG.ModifySkillRollDialogue.Title": "Modify Roll",
   "DG.ModifySkillRollDialogue.Test": "Test:",
   "DG.ModifySkillRollDialogue.OriginalTarget": "Original Target:",
-  "DG.ModifySkillRollDialogue.TargetModifier": "Modify Target (+/-):",
+  "DG.ModifySkillRollDialogue.TargetModifier": "Modify Target:",
   "DG.ModifySkillRollDialogue.ModifierTooltip": "Give a positive or negative modifier here to add/subtract from the target for the skill check.",
 
   "DG.ModifyDamageRollDialogue.Weapon": "Weapon:",
@@ -247,7 +245,7 @@
   "DG.Sheet.BlockHeaders.SkillsAndTraining": "SKILLS AND TRAINING",
   "DG.Sheet.BlockHeaders.Injuries": "INJURIES",
   "DG.Sheet.BlockHeaders.BreakingPointAndAdaptations": "BREAKING POINT AND ADAPTATIONS",
-  "DG.Sheet.BlockHeaders.MotivationsAndDisorders": "MOTIVATIONS AND DISDORDERS",
+  "DG.Sheet.BlockHeaders.MotivationsAndDisorders": "MOTIVATIONS AND DISORDERS",
   "DG.Sheet.BlockHeaders.PersonalInfoCV": "PERSONAL INFORMATION / CV",
   "DG.Sheet.BlockHeaders.BondsRelationshipsContacts": "BONDS / RELATIONSHIPS / CONTACTS",
 
@@ -278,5 +276,39 @@
 
   "DG.ItemWindow.Weapons.CustomSkillTarget": "Target",
   "DG.ItemWindow.Weapons.SkillModifier": "Skill Modifier",
-  "DG.ItemWindow.Custom": "Custom"
+  "DG.ItemWindow.Custom": "Custom",
+
+  "TYPES.Actor.agent": "Agent",
+  "TYPES.Actor.npc": "NPC",
+  "TYPES.Actor.unnatural": "Unnatural",
+  "TYPES.Actor.vehicle": "Vehicle",
+
+  "TYPES.Item.armor": "Armor",
+  "TYPES.Item.bond": "Bond",
+  "TYPES.Item.gear": "Gear",
+  "TYPES.Item.motivation": "Motivation",
+  "TYPES.Item.weapon": "Weapon",
+  "TYPES.Item.tome": "Tome",
+  "TYPES.Item.ritual": "Ritual",
+
+  "DG.Gear.Tomes": "TOMES",
+  "DG.Gear.Rituals": "RITUALS",
+
+  "DG.Tomes.Name": "Name",
+  "DG.Ritual.Name": "Name",
+
+  "DG.Tome.Name": "Name",
+  "DG.ItemWindow.Tome.Description": "Description",
+  "DG.ItemWindow.Tome.LanguagePlaceholder": "Language",
+  "DG.ItemWindow.Tome.StudyTime": "Study Time",
+  "DG.ItemWindow.Tome.OccultIncrease": "Occult Skill Increase",
+  "DG.ItemWindow.Tome.UnnaturalIncrease": "Unnatural Skill Increase",
+  "DG.ItemWindow.Tome.StudySanityDamage": "Study Sanity Damage",
+  "DG.ItemWindow.Tome.HandlerOnlyTabHeader": "Handler Only",
+  "DG.ItemWindow.Tome.HandlerNotes": "Handler Notes",
+
+  "DG.ItemWindow.Ritual.ActivationSanityDamage": "Activation SAN Damage",
+  "DG.ItemWindow.Ritual.ActivationTime": "Activation Time",
+  "DG.ItemWindow.Ritual.ActivationCosts": "Activation Costs",
+  "DG.ItemWindow.Ritual.StudyTime": "Study Time"
 }
