@@ -19,7 +19,7 @@
       "name": "Delta Green | español",
       "sorting": "a",
       "color": "#b95050",
-      "packs": ["armor-es","firearms-es","hand-to-hand-weapons-es","agent-pregens-es","operation-code-name-generator-tables-es","operation-code-name-generator-macro-es"]
+      "packs": ["armor-es","firearms-es","hand-to-hand-weapons-es"]
     }
   ],
   "packs": [{
@@ -46,33 +46,6 @@
       "system": "deltagreen",
       "path": "packs/hand-to-hand-weapons-es",
       "type": "Item",
-      "private": false,
-      "flags": {},
-      "package": "fvtt-module-deltagreen-es"
-    }, {
-      "name": "agent-pregens-es",
-      "label": "Agentes pregenerados",
-      "system": "deltagreen",
-      "path": "packs/pregens-es",
-      "type": "Actor",
-      "private": false,
-      "flags": {},
-      "package": "fvtt-module-deltagreen-es"
-    }, {
-      "name": "operation-code-name-generator-tables-es",
-      "label": "Tablas generación nombres de operaciones",
-      "system": "deltagreen",
-      "path": "packs/operation-code-name-generator-es",
-      "type": "RollTable",
-      "private": false,
-      "flags": {},
-      "package": "fvtt-module-deltagreen-es"
-    }, {
-      "name": "operation-code-name-generator-macro-es",
-      "label": "Macro de generación de nombres de operaciones",
-      "system": "deltagreen",
-      "path": "packs/operation-code-name-generator-macro-es",
-      "type": "Macro",
       "private": false,
       "flags": {},
       "package": "fvtt-module-deltagreen-es"
