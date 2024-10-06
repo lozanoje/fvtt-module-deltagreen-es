@@ -310,5 +310,6 @@
   "DG.ItemWindow.Ritual.ActivationSanityDamage": "Daño COR activación",
   "DG.ItemWindow.Ritual.ActivationTime": "Tiempo activación",
   "DG.ItemWindow.Ritual.ActivationCosts": "Coste activación",
-  "DG.ItemWindow.Ritual.StudyTime": "Tiempo de estudio"
+  "DG.ItemWindow.Ritual.StudyTime": "Tiempo de estudio",
+  "DG.ItemWindow.Ritual.LearnedSanityDamage": "Daño SAN aprendizaje"
 }
