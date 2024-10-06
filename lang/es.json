@@ -150,7 +150,7 @@
 
   "DG.Bonds.Bond": "Vínculo",
   "DG.Bonds.Name": "Nombre",
-  "DG.Bonds.Score": "Puntuación",
+  "DG.Bonds.Score": "Valor",
   "DG.Bonds.NewBond": "Nuevo vínculo",
 
   "DG.Tooltip.HP": "Puntos de vida, un personaje cae inconsciente a los 2 PV, y muere con 0 PV.",
@@ -186,7 +186,7 @@
   "DG.ItemWindow.Motivations.Motivation": "Motivación",
   "DG.ItemWindow.Motivations.Description": "Descripción/notas",
   "DG.ItemWindow.Motivations.Disorder": "Trastorno",
-  "DG.ItemWindow.Motivations.IsDisorder": "Es trastorno",
+  "DG.ItemWindow.Motivations.IsDisorder": "Trastorno",
   "DG.ItemWindow.Motivations.MotivationNameTooltip": "Algo que impulsa al personaje.",
   "DG.ItemWindow.Motivations.DisorderNameTooltip": "Un trastorno reemplaza una motivación después de llegar al punto de ruptura.",
   "DG.ItemWindow.Motivations.IsDisorderTooltip": "Marque esta opción si agrega un trastorno o si se ha perdido una motivación existente debido a la adquisición de un trastorno.",
@@ -201,7 +201,7 @@
 
   "DG.ItemWindow.Armor.Description": "Descripción",
   "DG.ItemWindow.Armor.NamePlaceholder": "Nombre",
-  "DG.ItemWindow.Armor.ArmorRating": "Puntuación armadura",
+  "DG.ItemWindow.Armor.ArmorRating": "Armadura",
   "DG.ItemWindow.Armor.Expense": "Gasto",
   "DG.ItemWindow.Armor.Equipped": "Equipado",
 
@@ -211,13 +211,13 @@
   "DG.ItemWindow.Weapons.Expense": "Gasto",
   "DG.ItemWindow.Weapons.Damage": "Daño",
   "DG.ItemWindow.Weapons.Lethality": "Letalidad",
-  "DG.ItemWindow.Weapons.IsLethality": "Es Letal",
+  "DG.ItemWindow.Weapons.IsLethality": "Letal",
   "DG.ItemWindow.Weapons.LethalityTooltip": "Un arma letal tiene la oportunidad de matar instantáneamente a un objetivo.  Tira 1D100 en lugar de un dado de daño.  Si no es letal, el daño se calcula en su lugar tirando 2d10, donde un '00' en el primer d10 es igual a 10.",
   "DG.ItemWindow.Weapons.IsLethalityTooltip": "Marca si el arma tiene un % de letalidad asociada.",
-  "DG.ItemWindow.Weapons.ArmorPiercing": "Perforación de armaduras",
-  "DG.ItemWindow.Weapons.Ammo": "Munición (cantidad/tipo)",
+  "DG.ItemWindow.Weapons.ArmorPiercing": "Perforación",
+  "DG.ItemWindow.Weapons.Ammo": "Munición",
   "DG.ItemWindow.Weapons.Range": "Alcance",
-  "DG.ItemWindow.Weapons.KillRadius": "Radio de muerte",
+  "DG.ItemWindow.Weapons.KillRadius": "Radio muerte",
 
   "DG.ModifySkillRollDialogue.Title": "Modificar tirada",
   "DG.ModifySkillRollDialogue.Test": "Test:",
@@ -300,16 +300,16 @@
   "DG.Tome.Name": "Nombre",
   "DG.ItemWindow.Tome.Description": "Descripción",
   "DG.ItemWindow.Tome.LanguagePlaceholder": "Idioma",
-  "DG.ItemWindow.Tome.StudyTime": "Tiempo de estudio",
-  "DG.ItemWindow.Tome.OccultIncrease": "Incremento ocultismo",
-  "DG.ItemWindow.Tome.UnnaturalIncrease": "Incremento sobrenatural",
-  "DG.ItemWindow.Tome.StudySanityDamage": "Daño de estudio a la Cordura",
-  "DG.ItemWindow.Tome.HandlerOnlyTabHeader": "Solo Controlador",
-  "DG.ItemWindow.Tome.HandlerNotes": "Notas Controlador",
+  "DG.ItemWindow.Tome.StudyTime": "Tiempo estudio",
+  "DG.ItemWindow.Tome.OccultIncrease": "% ocultismo",
+  "DG.ItemWindow.Tome.UnnaturalIncrease": "% sobrenatural",
+  "DG.ItemWindow.Tome.StudySanityDamage": "Pérdida Cordura",
+  "DG.ItemWindow.Tome.HandlerOnlyTabHeader": "Datos | Controlador",
+  "DG.ItemWindow.Tome.HandlerNotes": "Notas | Controlador",
 
-  "DG.ItemWindow.Ritual.ActivationSanityDamage": "Daño COR activación",
+  "DG.ItemWindow.Ritual.ActivationSanityDamage": "COR activación",
   "DG.ItemWindow.Ritual.ActivationTime": "Tiempo activación",
   "DG.ItemWindow.Ritual.ActivationCosts": "Coste activación",
-  "DG.ItemWindow.Ritual.StudyTime": "Tiempo de estudio",
-  "DG.ItemWindow.Ritual.LearnedSanityDamage": "Daño SAN aprendizaje"
+  "DG.ItemWindow.Ritual.StudyTime": "Tiempo estudio",
+  "DG.ItemWindow.Ritual.LearnedSanityDamage": "COR aprendizaje"
 }
