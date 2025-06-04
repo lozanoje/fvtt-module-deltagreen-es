@@ -313,5 +313,7 @@
   "DG.ItemWindow.Ritual.ActivationTime": "Tiempo activación",
   "DG.ItemWindow.Ritual.ActivationCosts": "Coste activación",
   "DG.ItemWindow.Ritual.StudyTime": "Tiempo estudio",
-  "DG.ItemWindow.Ritual.LearnedSanityDamage": "COR aprendizaje"
+  "DG.ItemWindow.Ritual.LearnedSanityDamage": "COR aprendizaje",
+
+  "DG.MissionPaused": "Misión en pausa"
 }
