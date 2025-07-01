@@ -2,7 +2,7 @@
   "id": "fvtt-module-deltagreen-es",
   "title": "Translation: Spanish [Delta Green: The Role-Playing Game]",
   "description": "Traducción del sistema Delta Green: The Role-Playing Game (github.com/TheLastScrub/delta-green-foundry-vtt-system-unofficial) al español -  Delta Green: The Role-Playing Game spanish translation",
-  "version": "1.50.2",
+  "version": "1.50.4",
   "compatibility": {
     "minimum": "13",
     "verified": "13.344",
@@ -18,20 +18,11 @@
   "packFolders": [{
       "name": "Delta Green | es",
       "sorting": "a",
-      "color": "#b95050",
-      "packs": ["armor-es","firearms-es","hand-to-hand-weapons-es"]
+      "color": "#808000",
+      "packs": ["armor-es","weapons-es","equipment-es"]
     }
   ],
   "packs": [{
-      "name": "firearms-es",
-      "label": "Armas de fuego",
-      "system": "deltagreen",
-      "path": "packs/firearms-es",
-      "type": "Item",
-      "private": false,
-      "flags": {},
-      "package": "fvtt-module-deltagreen-es"
-    }, {
       "name": "armor-es",
       "label": "Armaduras",
       "system": "deltagreen",
@@ -41,10 +32,19 @@
       "flags": {},
       "package": "fvtt-module-deltagreen-es"
     }, {
-      "name": "hand-to-hand-weapons-es",
-      "label": "Armas cuerpo a cuerpo",
+      "name": "weapons-es",
+      "label": "Armas",
       "system": "deltagreen",
-      "path": "packs/hand-to-hand-weapons-es",
+      "path": "packs/weapons-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "equipment-es",
+      "label": "Equipo y servicios",
+      "system": "deltagreen",
+      "path": "packs/equipment-es",
       "type": "Item",
       "private": false,
       "flags": {},
@@ -75,5 +75,8 @@
   },
   "esmodules": [
     "fvtt-module-deltagreen-es.js"
+  ],
+  "styles": [
+    "fvtt-module-deltagreen-es.css"
   ]
 }
