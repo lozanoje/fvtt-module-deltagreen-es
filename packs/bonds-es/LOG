@@ -1,0 +1,8 @@
+2025/07/03-12:45:38.599 3030 Recovering log #36
+2025/07/03-12:45:38.611 3030 Delete type=0 #36
+2025/07/03-12:45:38.611 3030 Delete type=3 #34
+2025/07/03-13:12:59.507 4aec Level-0 table #41: started
+2025/07/03-13:12:59.507 4aec Level-0 table #41: 0 bytes OK
+2025/07/03-13:12:59.512 4aec Delete type=0 #39
+2025/07/03-13:12:59.516 4aec Manual compaction at level-0 from '!folders!sw55AdfKetpEVTFp' @ 72057594037927935 : 1 .. '!items!wSZ7vl3xiq0sYfPE' @ 0 : 0; will stop at (end)
+2025/07/03-13:12:59.516 4aec Manual compaction at level-1 from '!folders!sw55AdfKetpEVTFp' @ 72057594037927935 : 1 .. '!items!wSZ7vl3xiq0sYfPE' @ 0 : 0; will stop at (end)

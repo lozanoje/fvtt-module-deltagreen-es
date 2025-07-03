@@ -19,7 +19,7 @@
       "name": "Delta Green | es",
       "sorting": "a",
       "color": "#808000",
-      "packs": ["armor-es","weapons-es","equipment-es"]
+      "packs": ["armor-es","weapons-es","equipment-es", "bonds-es", "motivations-es", "rituals-es", "tomes-es"]
     }
   ],
   "packs": [{
@@ -45,6 +45,42 @@
       "label": "Equipo y servicios",
       "system": "deltagreen",
       "path": "packs/equipment-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "bonds-es",
+      "label": "Lazos",
+      "system": "deltagreen",
+      "path": "packs/bonds-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "motivations-es",
+      "label": "Motivaciones",
+      "system": "deltagreen",
+      "path": "packs/motivations-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "rituals-es",
+      "label": "Rituales",
+      "system": "deltagreen",
+      "path": "packs/rituals-es",
+      "type": "Item",
+      "private": false,
+      "flags": {},
+      "package": "fvtt-module-deltagreen-es"
+    }, {
+      "name": "tomes-es",
+      "label": "Tomos",
+      "system": "deltagreen",
+      "path": "packs/tomes-es",
       "type": "Item",
       "private": false,
       "flags": {},
