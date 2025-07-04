@@ -1,0 +1,64 @@
+{
+  "DG": {
+    "scripts": {
+      "general": {
+        "roll": "Tirar",
+        "rolled": "Tirada",
+        "cancel": "Cancelar",
+        "select": "Seleccionar",
+        "type": "Tipo",
+        "ability": "Aptitud",
+        "modifier": "Modificador",
+        "characteristic": "Característica",
+        "charac": "Carac.",
+        "value": "Valor",
+        "actor": "Actor",
+        "errorselect": "Por favor, seleccione un icono",
+        "errortarget": "Por favor, marque un objetivo",
+        "erroractor": "No se han creado actores en este mundo",
+        "mod": "Mod.",
+        "rollp": "Tirada (%)",
+        "result": "Resultado",
+        "base": "Base",
+        "exit": "Salir"
+      },
+      "characteristicRolls": {
+        "title": "Tiradas de característica (deltagreen)",
+        "difficultyEnum": {
+          "1": "Acción sencilla (x5)",
+          "2": "Fácil (x4)",
+          "3": "Moderada (x3)",
+          "4": "Difícil (x2)",
+          "5": "Muy difícil (x1)",
+          "6": "Casi imposible (x0,5)"
+        },
+        "difficulty": "Dificultad",
+        "flavourString": "Tirando <span style=\"font-weight: bold;color: brown\">{charNam} ({charVal} x {charMul})</span>. La tirada ha sido {charRoll}% sobre una probabilidad modificada de {charValue}%, un {charLabel}"
+      },
+      "opposedRolls": {
+        "title": "Tiradas enfrentadas (deltagreen)",
+        "active": "Activo",
+        "pasive": "Pasivo",
+        "activeFlavour": "Tirada enfrentada, aptitud activa: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span> contra la aptitud pasiva: <span style=\"font-weight: bold;color: brown\">{pasiveName} ({pasiveBase}%)</span>",
+        "pasiveFlavour": "Resultado: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span> contra <span style=\"font-weight: bold;color: brown\">{pasiveName} ({pasiveBase}%)</span>",
+        "stat": "Característica",
+        "skill": "Habilidad",
+        "winner": "GANADOR",
+        "loser": "PERDEDOR",
+        "tie": "EMPATE"
+      },
+      "skillRolls": {
+        "title": "Tiradas de habilidades (deltagreen)",
+        "stat": "Característica",
+        "skill": "Habilidad",
+        "activeFlavour": "Tirada: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span>"
+      },
+      "tableRolls": {
+        "title": "Tirar en tabla",
+        "table": "Tabla",
+        "rollas": "Tirar como",
+        "tableFlavour": "Saca un resultado de la tabla <span style=\"font-weight: bold;color: brown\">{tableName}</span>"
+      }
+    }
+  }
+}

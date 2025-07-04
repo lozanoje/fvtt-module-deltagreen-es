@@ -1,0 +1,64 @@
+{
+  "DG": {
+    "scripts": {
+      "general": {
+        "roll": "Roll",
+        "rolled": "Roll",
+        "cancel": "Cancel",
+        "select": "Select",
+        "type": "Type",
+        "ability": "Ability",
+        "modifier": "Modifier",
+        "characteristic": "Characteristic",
+        "charac": "Charac",
+        "value": "Value",
+        "actor": "Actor",
+        "errorselect": "Please SELECT a token first",
+        "errortarget": "Please TARGET a token first",
+        "erroractor": "No actors defined in the world",
+        "mod": "Mod",
+        "rollp": "Roll (%)",
+        "result": "Result",
+        "base": "Base",
+        "exit": "Exit"
+      },
+      "characteristicRolls": {
+        "title": "Characteristic Rolls (RQG)",
+        "difficultyEnum": {
+          "1": "Simple action (x5)",
+          "2": "Easy (x4)",
+          "3": "Moderate (x3)",
+          "4": "Hard (x2)",
+          "5": "Very hard (x1)",
+          "6": "Nearly impossible (x0.5)"
+        },
+        "difficulty": "Difficulty",
+        "flavourString": "Rolling <span style=\"font-weight: bold;color: brown\">{charNam} ({charVal} x {charMul})</span>. Rolled {charRoll}% on a modified probability of {charValue}%, a {charLabel}"
+      },
+      "opposedRolls": {
+        "title": "Opposed Rolls (RQG)",
+        "active": "Active",
+        "pasive": "Pasive",
+        "activeFlavour": "Opposed test, active ability: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span> versus pasive ability <span style=\"font-weight: bold;color: brown\">{pasiveName} ({pasiveBase}%)</span>",
+        "pasiveFlavour": "Results: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span> versus <span style=\"font-weight: bold;color: brown\">{pasiveName} ({pasiveBase}%)</span>",
+        "stat": "Statistic",
+        "skill": "Skill",
+        "winner": "WINNER",
+        "loser": "LOSER",
+        "tie": "TIE"
+      },
+      "skillRolls": {
+        "title": "Skill Rolls (deltagreen)",
+        "stat": "Statistic",
+        "skill": "Skill",
+        "activeFlavour": "Roll: <span style=\"font-weight: bold;color: brown\">{activeName} ({activeBase}%)</span>"
+      },
+      "tableRolls": {
+        "title": "Table Rolls",
+        "table": "Table",
+        "rollas": "Roll As",
+        "tableFlavour": "Draws a result from the <span style=\"font-weight: bold;color: brown\">{tableName}</span> table"
+      }
+    }
+  }
+}

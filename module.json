@@ -13,6 +13,14 @@
       "name": "Español",
       "path": "lang/es.json",
       "flags": {}
+    }, {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/macrosDG_es.json"
+    }, {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/macrosDG_en.json"
     }
   ],
   "packFolders": [{
