@@ -163,24 +163,28 @@ function skillRolls() {
                 activeBase: activeBase,
               }
             )}`;
-            let activeString = `<table>
-            <tr>
-                <th>${game.i18n.localize("DG.scripts.general.actor")}</th>
-                <th>${game.i18n.localize("DG.scripts.general.base")}</th>
-                <th>${game.i18n.localize("DG.scripts.general.mod")}</th>
-                <th>${game.i18n.localize("DG.scripts.general.rollp")}</th>
-                <th>${game.i18n.localize("DG.scripts.general.result")}</th> 
+            let activeString = `
+            <table class="dgTable">
+            <thead>
+			<tr>
+              <th>${game.i18n.localize("DG.scripts.general.actor")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.base")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.mod")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.rollp")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.result")}</th> 
             </tr>
+			</thead>
+			<tbody>
             <tr>
-            <td style="font-weight: bold;">${activeActor}</td>
-            <td style="text-align: center; vertical-align: middle;">${activeBase}</td>
-            <td style="text-align: center; vertical-align: middle;">${activeMod}</td>
-            <td style="text-align: center; vertical-align: middle; font-weight: bold;">${
-              activeRoll.result
-            } (${activeValue})</td>
-            <td style="text-align: center; vertical-align: middle; font-weight: bold;">${activeLabel}</td>
+              <td>${activeActor}</td>
+              <td>${activeBase}</td>
+              <td>${activeMod}</td>
+              <td>${activeRoll.result} (${activeValue})</td>
+              <td>${activeLabel}</td>
             </tr>
-            </table>`;
+			</tbody>
+            </table>
+			`;
             activeRoll.toMessage({
               user: game.user.id,
               speaker: ChatMessage.getSpeaker(),

@@ -57,7 +57,8 @@
         "title": "Tirar en tabla",
         "table": "Tabla",
         "rollas": "Tirar como",
-        "tableFlavour": "Saca un resultado de la tabla <span style=\"font-weight: bold;color: brown\">{tableName}</span>"
+        "tableFlavour": "Saca un resultado de la tabla <span style=\"font-weight: bold;color: brown\">{tableName}</span>",
+        "formula": "Formula"
       }
     }
   }

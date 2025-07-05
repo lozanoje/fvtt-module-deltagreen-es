@@ -1,0 +1,52 @@
+.deltagreen .resource-label {
+  text-transform: unset;
+}
+
+table.dgTable {
+  font-family: Tahoma, Geneva, sans-serif;
+  border: 2px solid #808000;
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 1em;
+}
+
+table.dgTable td, table.dgTable th {
+  border: 1px solid #808000;
+  padding: 3px 2px;
+}
+
+table.dgTable td:first-child {
+  font-weight: bold;
+  text-align: left;
+}
+
+table.dgTable tbody td {
+  color: #000000;
+}
+
+table.dgTable tr:nth-child(even) {
+  background: #E0DECC;
+}
+
+table.dgTable thead {
+  background: #808000;
+  background: -moz-linear-gradient(top, #a0a040 0%, #8c8c19 66%, #808000 100%);
+  background: -webkit-linear-gradient(top, #a0a040 0%, #8c8c19 66%, #808000 100%);
+  background: linear-gradient(to bottom, #a0a040 0%, #8c8c19 66%, #808000 100%);
+  border-bottom: 1px solid #444444;
+}
+
+table.dgTable thead th {
+  padding: 1em;
+  writing-mode: vertical-lr;
+  min-width: 50px; /* for firefox */  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #D0E4F5;
+}
+table.dgTable thead th:first-child {
+  border-left: none;
+}
+

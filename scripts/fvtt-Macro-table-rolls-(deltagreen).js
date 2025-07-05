@@ -93,24 +93,26 @@ function tableRolls() {
               }
             )}`;
             let contentString = `
-              <hr>
-              <table>
+              <table class="dgTable">
+              <thead>
               <tr>
-                  <th style="text-align: center; vertical-align: middle;">Formula</th>
-                  <th style="text-align: center; vertical-align: middle;">Result</th>
+                <th>${game.i18n.localize("DG.scripts.tableRolls.table")}</th>
+                <th>${game.i18n.localize("DG.scripts.tableRolls.formula")}</th>
+                <th>${game.i18n.localize("DG.scripts.general.result")}</th>
               </tr>
+              </thead>
+              <tbody>
               <tr>
-              <td style="text-align: center; vertical-align: middle;">${
-                table.formula
-              }</td>
-              <td style="text-align: center; vertical-align: middle;">${
-                charRoll.result
-              }</td>
+                <td>${table.name}</td>
+                <td>${table.formula}</td>
+                <td>${charRoll.result}</td>
               </tr>
+							<tr>
+                <td colspan="3">${table.getResultsForRoll(charRoll.result)[0].text}</td>
+              </tr>
+              </tbody>
               </table>
-              <hr>
-              ${table.getResultsForRoll(charRoll.result)[0].text}
-              <hr>
+              
               `;
 
             charRoll.toMessage({

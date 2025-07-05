@@ -192,20 +192,28 @@ function characteristicRolls() {
               }
             )}`;
             // let flavourString = `Rolling <span style="font-weight: bold;color: brown">${charNam} (${charVal} x ${charMul})</span>. Rolled ${charRoll.result}% on a modified probability of ${charValue}%, a ${charLabel}`;
-            let contentString = `<table>
-              <tr>
-                  <th colspan="1">${game.i18n.localize("DG.scripts.general.value")}</th>
-                  <th colspan="1">${game.i18n.localize("DG.scripts.general.mod")}</th>
-                  <th colspan="1">${game.i18n.localize("DG.scripts.general.rollp")}</th>
-                  <th colspan="1">${game.i18n.localize("DG.scripts.general.result")}</th> 
-              </tr>
-              <tr>
-              <td colspan="1" style="text-align: center; vertical-align: middle;">${charVal} (x${charMul})</td>
-              <td colspan="1" style="text-align: center; vertical-align: middle;">${charMod}</td>
-              <td colspan="1" style="text-align: center; vertical-align: middle; font-weight: bold;">${charRoll.result} (${charValue})</td>
-              <td colspan="1" style="text-align: center; vertical-align: middle; font-weight: bold;">${charLabel}</td>
-              </tr>
-              </table>`;
+            let contentString = `
+			<table class="dgTable">
+            <thead>
+            <tr>
+              <th>${game.i18n.localize("DG.scripts.general.charac")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.value")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.mod")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.rollp")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.result")}</th> 
+            </tr>
+            </thead>
+			<tbody>
+            <tr>
+              <td>${game.i18n.localize("DG.Attributes." + charNam)}</td>
+              <td>${charVal} (x${charMul})</td>
+              <td>${charMod}</td>
+              <td>${charRoll.result} (${charValue})</td>
+              <td>${charLabel}</td>
+            </tr>
+			</tbody>
+			</table>
+			`;
 
             charRoll.toMessage({
               user: game.user.id,

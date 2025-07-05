@@ -57,7 +57,8 @@
         "title": "Table Rolls",
         "table": "Table",
         "rollas": "Roll As",
-        "tableFlavour": "Draws a result from the <span style=\"font-weight: bold;color: brown\">{tableName}</span> table"
+        "tableFlavour": "Draws a result from the <span style=\"font-weight: bold;color: brown\">{tableName}</span> table",
+        "formula": "Fórmula"
       }
     }
   }
