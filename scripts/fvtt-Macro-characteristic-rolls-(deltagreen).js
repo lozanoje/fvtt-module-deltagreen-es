@@ -85,6 +85,14 @@ const statistics = {
   cha: `${game.i18n.localize("DG.Attributes.cha")}`,
 };
 
+const activeOptions = Array.from(canvas.tokens.controlled).reduce(
+  (a, b) =>
+    (a += `<option value="${game.actors.get(b.document.actorId).name}">${
+      game.actors.get(b.document.actorId).name
+    }</option>`),
+  ``
+);
+
 characteristicRolls();
 
 function characteristicRolls() {
@@ -120,21 +128,15 @@ function characteristicRolls() {
     </style>
     <table class="tg">
     <tr>
-    <td class="tg-r5a9" colspan="3">${game.i18n.localize(
-      "DG.scripts.general.characteristic"
-    )}</td>
-    <td class="tg-r5a9" colspan="1">${game.i18n.localize(
-      "DG.scripts.general.value"
-    )}</td>
-    <td class="tg-r5a9" colspan="3">${game.i18n.localize(
-      "DG.scripts.characteristicRolls.difficulty"
-    )}</td>
-    <td class="tg-r5a9" colspan="1">${game.i18n.localize(
-      "DG.scripts.general.modifier"
-    )}</td>
+  <td class="tg-r5a9" colspan="2">${game.i18n.localize("DG.scripts.general.actor")}</td>	
+    <td class="tg-r5a9" colspan="3">${game.i18n.localize("DG.scripts.general.characteristic")}</td>
+    <td class="tg-r5a9" colspan="1">${game.i18n.localize("DG.scripts.general.value")}</td>
+    <td class="tg-r5a9" colspan="3">${game.i18n.localize("DG.scripts.characteristicRolls.difficulty")}</td>
+    <td class="tg-r5a9" colspan="1">${game.i18n.localize("DG.scripts.general.modifier")}</td>
     </tr>
     <tr>
-    <td class="tg-d6y8" colspan="3" style="font-weight: bold;"><select name="charNam">${charOptions}</select></td>
+   <td class="tg-d6y8" colspan="2" style="font-weight: bold;"><select name="activeActor">${activeOptions}</select></td>
+   <td class="tg-d6y8" colspan="3" style="font-weight: bold;"><select name="charNam">${charOptions}</select></td>
     <td class="tg-d6y8" colspan="1"><input type="number" id="charVal" name="charVal" value=0></td>
     <td class="tg-d6y8" colspan="3" style="font-weight: bold;"><select name="charMul">${multOptions}</select></td>
     <td class="tg-d6y8" colspan="1"><input type="number" id="charMod" name="charMod" value=0></td>
@@ -157,6 +159,7 @@ function characteristicRolls() {
             const charVal = html.find(`[name="charVal"]`).val();
             const charMod = html.find(`[name="charMod"]`).val();
             const charMul = html.find(`[name="charMul"]`).val();
+            const activeActor = html.find(`[name="activeActor"]`).val();
 
             let charValue = Math.max(1, charVal * charMul + charMod * 1);
             let charRoll = new Roll("1d100");
@@ -196,7 +199,7 @@ function characteristicRolls() {
 			<table class="dgTable">
             <thead>
             <tr>
-              <th>${game.i18n.localize("DG.scripts.general.charac")}</th>
+              <th>${game.i18n.localize("DG.scripts.general.actor")}</th>
               <th>${game.i18n.localize("DG.scripts.general.value")}</th>
               <th>${game.i18n.localize("DG.scripts.general.mod")}</th>
               <th>${game.i18n.localize("DG.scripts.general.rollp")}</th>
@@ -205,7 +208,7 @@ function characteristicRolls() {
             </thead>
 			<tbody>
             <tr>
-              <td>${game.i18n.localize("DG.Attributes." + charNam)}</td>
+              <td>${activeActor}</td>
               <td>${charVal} (x${charMul})</td>
               <td>${charMod}</td>
               <td>${charRoll.result} (${charValue})</td>
@@ -236,15 +239,17 @@ function characteristicRolls() {
 
 await new Promise((resolve) => setTimeout(resolve, 250));
 $(document).ready(function () {
-  const firstcharOptions =
-    token.actor.system.statistics[$("select[name=charNam]")[0].value].value;
-  console.log(
-    "R: " + $("select[name=charNam]")[0].value + ": " + firstcharOptions
-  );
+  const firstcharOptions = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=charNam]")[0].value].value;
   $("input[name=charVal]").val(firstcharOptions);
   $("select[name=charNam]").change(function () {
-    const newcharOptions =
-      token.actor.system.statistics[$("select[name=charNam]")[0].value].value;
+    const newcharOptions = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=charNam]")[0].value].value;
+    console.log(
+      "C: " + $("select[name=charNam]")[0].value + ": " + newcharOptions
+    );
+    $("input[name=charVal]").val(newcharOptions);
+  });
+  $("select[name=activeActor]").change(function () {
+    const newcharOptions = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=charNam]")[0].value].value;
     console.log(
       "C: " + $("select[name=charNam]")[0].value + ": " + newcharOptions
     );

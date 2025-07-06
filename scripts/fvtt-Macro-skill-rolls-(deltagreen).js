@@ -71,23 +71,17 @@ const content = `
 </style>
 <table class="tg">
   <tr>
-  <td class="tg-r5a9" colspan="2">${game.i18n.localize(
-    "DG.scripts.general.actor"
-  )}</td>
-  <td class="tg-r5a9" colspan="2">${game.i18n.localize(
-    "DG.scripts.general.type"
-  )}</td>
-  <td class="tg-r5a9" colspan="5">${game.i18n.localize(
-    "DG.scripts.general.ability"
-  )}</td>
-  <td class="tg-r5a9" colspan="1">${game.i18n.localize(
-    "DG.scripts.general.modifier"
-  )}</td>
+  <td class="tg-r5a9" colspan="2">${game.i18n.localize("DG.scripts.general.actor")}</td>
+  <td class="tg-r5a9" colspan="2">${game.i18n.localize("DG.scripts.general.type")}</td>
+  <td class="tg-r5a9" colspan="5">${game.i18n.localize("DG.scripts.general.ability")}</td>
+  <td class="tg-r5a9" colspan="1">${game.i18n.localize("DG.scripts.general.value")}</td>
+  <td class="tg-r5a9" colspan="1">${game.i18n.localize("DG.scripts.general.modifier")}</td>
   </tr>
   <tr>
   <td class="tg-d6y8" colspan="2" style="font-weight: bold;"><select name="activeActor">${activeOptions}</select></td>
   <td class="tg-d6y8" colspan="2" style="font-weight: bold;"><select name="activeType">${typeOptions}</select></td>
   <td class="tg-d6y8" colspan="5"><select name="activeName"></select></td>
+  <td class="tg-d6y8" colspan="1"><input type="number" id="activeVal" name="activeVal" value=0></td>
   <td class="tg-d6y8" colspan="1"><input type="number" id="activeMod" name="activeMod" value=0></td>
   </tr>
   </table>
@@ -276,5 +270,85 @@ $(document).ready(function () {
         : newactiveOptions_skills + newactiveOptions_typedSkills;
     $("select[name=activeName]").empty();
     $("select[name=activeName]").append(newactiveOptions);
+  });
+$("select[name=activeActor]").change(function () {
+    const newactiveOptions_stats = Object.getOwnPropertyNames(
+      game.actors.getName($("select[name=activeActor]")[0].value).system
+        .statistics
+    ).reduce(
+      (acc, e) =>
+        (acc += `<option value="${e}">${game.i18n.localize(
+          "DG.Attributes." + e
+        )}</option>`),
+      ``
+    );
+    const newactiveOptions_skills = Object.getOwnPropertyNames(
+      game.actors.getName($("select[name=activeActor]")[0].value).system.skills
+    ).reduce(
+      (acc, e) =>
+        (acc += `<option value="${e}">${game.i18n.localize(
+          "DG.Skills." + e
+        )}</option>`),
+      ``
+    );
+    const newactiveOptions_typedSkills = Object.entries(
+      game.actors.getName($("select[name=activeActor]")[0].value).system
+        .typedSkills
+    ).reduce(
+      (acc, e) =>
+        (acc += `<option value="${e[0]}">${game.i18n.localize(
+          "DG.TypeSkills." + e[1].group
+        )} (${e[1].label})</option>`),
+      ``
+    );
+    const newactiveOptions =
+      $("select[name=activeType]")[0].value === "stat"
+        ? newactiveOptions_stats
+        : newactiveOptions_skills + newactiveOptions_typedSkills;
+    $("select[name=activeName]").empty();
+    $("select[name=activeName]").append(newactiveOptions);
+  });
+
+ let firstactiveValues;
+ if ($("select[name=activeType]")[0].value === "stat"){
+	 firstactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=activeName]")[0].value].value * 5;
+ }else{
+	 firstactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value] ?
+	game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value].proficiency
+    : game.actors.getName($("select[name=activeActor]")[0].value).system.typedSkills[$("select[name=activeName]")[0].value].proficiency;
+ }
+  $("input[name=activeVal]").val(firstactiveValues);
+    $("select[name=activeName]").change(function () {
+ let newactiveValues;
+ if ($("select[name=activeType]")[0].value === "stat"){
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=activeName]")[0].value].value * 5;
+ }else{
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value] ?
+	game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value].proficiency
+    : game.actors.getName($("select[name=activeActor]")[0].value).system.typedSkills[$("select[name=activeName]")[0].value].proficiency;
+ }
+    $("input[name=activeVal]").val(newactiveValues);
+  });
+  $("select[name=activeActor]").change(function () {
+ let newactiveValues;
+ if ($("select[name=activeType]")[0].value === "stat"){
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=activeName]")[0].value].value * 5;
+ }else{
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value] ?
+	game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value].proficiency
+    : game.actors.getName($("select[name=activeActor]")[0].value).system.typedSkills[$("select[name=activeName]")[0].value].proficiency;
+ }
+    $("input[name=activeVal]").val(newactiveValues);
+  });
+  $("select[name=activeType]").change(function () {
+ let newactiveValues;
+ if ($("select[name=activeType]")[0].value === "stat"){
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.statistics[$("select[name=activeName]")[0].value].value * 5;
+ }else{
+	 newactiveValues = game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value] ?
+	game.actors.getName($("select[name=activeActor]")[0].value).system.skills[$("select[name=activeName]")[0].value].proficiency
+    : game.actors.getName($("select[name=activeActor]")[0].value).system.typedSkills[$("select[name=activeName]")[0].value].proficiency;
+ }
+    $("input[name=activeVal]").val(newactiveValues);
   });
 });
