@@ -107,8 +107,11 @@ function tableRolls() {
                 <td>${table.formula}</td>
                 <td>${charRoll.result}</td>
               </tr>
-							<tr>
-                <td colspan="3">${table.getResultsForRoll(charRoll.result)[0].text}</td>
+			  <tr>
+                <td colspan="3">${table.getResultsForRoll(charRoll.result)[0].name}</td>
+              </tr>
+			  <tr>
+                <td colspan="3">${table.getResultsForRoll(charRoll.result)[0].description}</td>
               </tr>
               </tbody>
               </table>
