@@ -107,7 +107,7 @@
     "systems": [{
         "id": "deltagreen",
         "type": "system",
-        "compatibility": "1.5.0"
+        "compatibility": "1.6.0"
       }
     ],
     "requires": [{
