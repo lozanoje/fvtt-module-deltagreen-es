@@ -192,6 +192,8 @@
   "DG.Mental.Motivations": "Motivaciones",
   "DG.Mental.Disorders": "Desórdenes",
 
+  "DG.Gear.WeaponTypes.Firearms": "Armas de fuego",
+  "DG.Gear.WeaponTypes.Melee": "Cuerpo a cuerpo",
   "DG.Gear.Weapons": "ARMAS",
   "DG.Gear.Armor": "ARMADURA",
   "DG.Gear.OtherGear": "OTRO EQUIPO",
@@ -340,6 +342,12 @@
   "DG.ItemWindow.Weapons.CustomSkillTarget": "Objetivo",
   "DG.ItemWindow.Weapons.SkillModifier": "Mod. habilidad",
   "DG.ItemWindow.Custom": "Personalizado",
+
+  "DG.Sheet.class.item": "Hoja de objeto",
+  "DG.Sheet.class.agent": "Hoja de agente",
+  "DG.Sheet.class.npc": "Hoja de PNJ",
+  "DG.Sheet.class.unnatural": "Hoja de antinatural",
+  "DG.Sheet.class.vehicle": "Hoja de vehículo",
 
   "TYPES.Actor.agent": "Agente",
   "TYPES.Actor.npc": "PNJ",

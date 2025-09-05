@@ -192,6 +192,8 @@
   "DG.Mental.Motivations": "Motivation",
   "DG.Mental.Disorders": "Disorder",
 
+  "DG.Gear.WeaponTypes.Firearms": "Firearms",
+  "DG.Gear.WeaponTypes.Melee": "Melee",
   "DG.Gear.Weapons": "WEAPONS",
   "DG.Gear.Armor": "ARMOR",
   "DG.Gear.OtherGear": "OTHER GEAR",
@@ -340,6 +342,12 @@
   "DG.ItemWindow.Weapons.CustomSkillTarget": "Target",
   "DG.ItemWindow.Weapons.SkillModifier": "Skill Modifier",
   "DG.ItemWindow.Custom": "Custom",
+
+  "DG.Sheet.class.item": "Item Sheet",
+  "DG.Sheet.class.agent": "Agent Sheet",
+  "DG.Sheet.class.npc": "NPC Sheet",
+  "DG.Sheet.class.unnatural": "Unnatural Sheet",
+  "DG.Sheet.class.vehicle": "Vehicle Sheet",
 
   "TYPES.Actor.agent": "Agent",
   "TYPES.Actor.npc": "NPC",
