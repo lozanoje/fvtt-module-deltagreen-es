@@ -395,6 +395,8 @@
   "DG.Settings.charactersheet.program": "El programa",
   "DG.Settings.sortskills.name": "Ordenar habilidades por columna",
   "DG.Settings.sortskills.hint": "Si se habilita, se ordena por columna. Si no, se ordena por fila.",
+  "DG.Settings.hideSkillTooltips.name": "Ocultar burbujas de habilidades",
+  "DG.Settings.hideSkillTooltips.hint": "No muestra las burbujas informativas en las hojas de agente.",
   "DG.Settings.keepSanityPrivate.name": "Mantener COR privada",
   "DG.Settings.keepSanityPrivate.hint": "Ocultar la COR a los jugadores, tanto en la hoja de personaje como en las tiradas.",
   "DG.Settings.skillImprovementFormula.name": "Tirada de mejora de habilidad",
