@@ -182,7 +182,7 @@
   "DG.Generic.AddButtonLabel": "Añadir",
 
   "DG.Mental.BreakingPoint": "Punto de ruptura: ",
-  "DG.Mental.Tooltip.BreakingPoint": "Es el punto en el cual la COR del agente ha disminuido tanto por los traumas como para desarrollar un nuevo trastorno mental. Cuando la COR llegue a este punto o menos, resta el POD del agente de su nueva COR. Ese será el nuevo punto de ruptura.",
+  "DG.Mental.Tooltip.BreakingPoint": "Cuando se falla una tirada de COR y la tirada es igual o está por debajo de este valor, el Agente gana un nuevo trastorno mental; ajusta el nuevo punto de ruptura a la COR actual - POD. Los trastornos se mantienen incluso si la COR vuelve a subir por encima del punto de ruptura anterior.",
   "DG.Mental.Reset": "Borrar",
   "DG.Mental.SanityLossIncidentsLabel": "Incidentes de perdida de COR sin llegar a la demencia",
   "DG.Mental.Violence": "Violencia",
