@@ -121,9 +121,9 @@
   "DG.SpecialTraining.Dialog.SkillLabel": "Habilidad o característica",
   "DG.SpecialTraining.Dialog.Title": "Crear/editar entrenamiento especial",
 
-  "DG.Attributes.HP": "Puntos de salud (PS)",
-  "DG.Attributes.WP": "Puntos de voluntad (PV)",
-  "DG.Attributes.SAN": "Puntos de Cordura (COR)",
+  "DG.Attributes.HP": "PS",
+  "DG.Attributes.WP": "PV",
+  "DG.Attributes.SAN": "COR",
   "DG.Attributes.str": "FUE",
   "DG.Attributes.con": "CON",
   "DG.Attributes.dex": "DES",
