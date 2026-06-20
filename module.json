@@ -2,11 +2,10 @@
   "id": "fvtt-module-deltagreen-es",
   "title": "Translation: Spanish [Delta Green: The Role-Playing Game]",
   "description": "Traducción del sistema Delta Green: The Role-Playing Game (github.com/TheLastScrub/delta-green-foundry-vtt-system-unofficial) al español -  Delta Green: The Role-Playing Game spanish translation",
-  "version": "1.66.1",
+  "version": "1.70.1",
   "compatibility": {
     "minimum": "13",
-    "verified": "13.351",
-    "maximum": "13"
+    "verified": "14"
   },
   "languages": [{
       "lang": "es",
@@ -107,7 +106,7 @@
     "systems": [{
         "id": "deltagreen",
         "type": "system",
-        "compatibility": "1.6.6"
+        "compatibility": "1.7.0"
       }
     ],
     "requires": [{
